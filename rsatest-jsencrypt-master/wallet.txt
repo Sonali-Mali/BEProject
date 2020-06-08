@@ -1,0 +1,3 @@
+privatekey from wallet
+public key from wallet
+mnemonic for wallet

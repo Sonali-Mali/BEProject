@@ -1,0 +1,20 @@
+<table class="detailsT2">
+  <tr>
+    <td>Contract</td>
+    <td class="1st"><input [(ngModel)]='address' /></td>
+  </tr>
+  <tr>
+    <td>Type</td>
+    <td class="2nd"><input [(ngModel)]='type' /></td>
+  </tr>
+  <tr>
+    <td>Command</td>
+    <td class="3rd"><input [(ngModel)]='command' /></td>
+  </tr>
+  <tr>
+    <td>Params</td>
+    <td class="4th"><textarea [(ngModel)]='params'></textarea></td>
+  </tr>
+</table>
+
+<button (click)='onSend()'>Send</button>

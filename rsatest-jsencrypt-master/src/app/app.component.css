@@ -1,0 +1,25 @@
+
+.wallet1{
+    margin-left: 3%;
+    background-color: rgb(104, 92, 92);
+    color: red;
+    padding: 15px;
+}
+.wallet2{
+    margin-left: 5%;
+    background-color: rgb(104, 92, 92);
+   color: red;
+   padding: 15px;
+}
+.wallet3{
+    margin-left: 7%;
+    background-color: rgb(104, 92, 92);
+    color: red;
+    padding: 15px;
+}
+h4{
+    font-weight: bold;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    color: tomato;
+}
