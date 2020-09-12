@@ -21,4 +21,11 @@ export class BuildersComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  public addBuilder() {
+    this.message = 'Adding builder...';
+    this.smartcontract.addBuilder(this.id, this.publickey, this.address, this.contact, this.name, this.city);
+    this.message = 'Builder added';
+
+  }
+
 }
