@@ -45,12 +45,12 @@
     </thead>
     <tbody>
       <tr *ngFor="let e of smartcontract.builderlist">
-        <td>{{e.id}}</td>
-        <td>{{e.publickey}}</td>
-        <td>{{e.address}}</td>
-        <td>{{e.contact}}</td>
-        <td>{{e.name}}</td>
-        <td>{{e.city}}</td>
+        <td>{{e[0]}}</td>
+        <td>{{e[1]}}</td>
+        <td>{{e[2]}}</td>
+        <td>{{e[3]}}</td>
+        <td>{{e[4]}}</td>
+        <td>{{e[5]}}</td>
       </tr>
     </tbody>
   </table>
