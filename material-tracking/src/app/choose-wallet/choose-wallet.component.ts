@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Wallet } from '../wallet';
+import { SmartContractService } from './../smart-contract.service';
 
 @Component({
   selector: 'app-choose-wallet',
@@ -11,7 +12,7 @@ export class ChooseWalletComponent implements OnInit {
   public publickey = '';
   public privatekey = '';
 
-  constructor() { }
+  constructor(private smartcontract : SmartContractService) { }
 
   ngOnInit() {
   }

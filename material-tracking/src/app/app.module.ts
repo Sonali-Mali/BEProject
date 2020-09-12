@@ -1,3 +1,4 @@
+import { SmartContractService } from './smart-contract.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -30,7 +31,7 @@ import { SellerComponent } from './seller/seller.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [SmartContractService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

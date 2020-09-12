@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SmartContractService } from './../smart-contract.service';
 
 @Component({
   selector: 'app-builders',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuildersComponent implements OnInit {
 
-  constructor() { }
+  public id = '';
+  public publickey = '';
+  public address = '';
+  public contact = '';
+  public name = '';
+  public city = '';
+  public message = '';
+
+  constructor(public smartcontract: SmartContractService) { }
 
   ngOnInit(): void {
   }

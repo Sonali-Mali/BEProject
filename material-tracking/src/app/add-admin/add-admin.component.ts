@@ -1,5 +1,5 @@
+import { SmartContractService } from './../smart-contract.service';
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-add-admin',
@@ -8,10 +8,19 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AddAdminComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  public cname = '';
+  public address = '';
+  public message = '';
+
+  constructor(public smartcontract: SmartContractService) { }
 
   ngOnInit(): void {
-    console.log(this.http);
+  }
+
+  public addAdmin() {
+    this.message = 'Adding admin...';
+    this.smartcontract.addAdmin(this.cname, this.address);
+    this.message = 'Admin added';
   }
 
 }
